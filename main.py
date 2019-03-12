@@ -105,7 +105,6 @@ def flush():
     di = [2,0]
     he = [3,0]
     sp = [4,0]
-    suit.clear()
     suit = [cl, di, he, sp]
     p = 4
     if JOKER == 1:
@@ -127,6 +126,7 @@ def flush():
                     time.sleep(0.3)
             global FIN
             FIN = 1
+            suit.clear()
             break
                 
 #ペア系列
@@ -157,14 +157,28 @@ def pair():
                     time.sleep(0.3)
             global FIN
             FIN = 1
+    one = [1,0]
+    two = [2,0]
+    three = [3,0]
+    four = [4,0]
+    five = [5,0]
+    six = [6,0]
+    seven = [7,0]
+    eight = [8,0]
+    nine = [9,0]
+    ten = [10,0]
+    eleven = [11,0]
+    twelve = [12,0]
+    thirteen = [13,0]
+
 
 #選択セクション     
 def choice():
     check() #存在するカードの情報をhandに加える
     joker() #ジョーカーが存在した場合handから削除し、JOKERフラグを立てる
-    flush() #フラッシュ期待ハンドの対応
+    pair()  #スリーペア期待ハンドの対応
     if FIN == 0:
-        pair()  #スリーペア期待ハンドの対応
+        flush() #フラッシュ期待ハンドの対応
     start()
 
 #High and Lowセクション
@@ -257,9 +271,6 @@ def order():
             pass
     if ORDER == 0:
         order()
-    #ループ処理
-    if ORDER == 0:
-        order()
 
 #リストとフラグの初期化
 def flag():
@@ -274,7 +285,7 @@ hand = []
 JOKER = 0
 FIN = 0
 
-for c in range(50):
+for c in range(500):
     print("try", c+1)
     flag()
     order()
