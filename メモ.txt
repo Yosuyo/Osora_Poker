@@ -1,0 +1,105 @@
+joker = Image.open('G:\ポーカー自動化bot\data\JOKER.png')
+c1 = Image.open('G:\ポーカー自動化bot\data\c1.png')
+c2 = Image.open('G:\ポーカー自動化bot\data\c2.png')
+c3 = Image.open('G:\ポーカー自動化bot\data\c3.png')
+c4 = Image.open('G:\ポーカー自動化bot\data\c4.png')
+c5 = Image.open('G:\ポーカー自動化bot\data\c5.png')
+c6 = Image.open('G:\ポーカー自動化bot\data\c6.png')
+c7 = Image.open('G:\ポーカー自動化bot\data\c7.png')
+c8 = Image.open('G:\ポーカー自動化bot\data\c8.png')
+c9 = Image.open('G:\ポーカー自動化bot\data\c9.png')
+c10 = Image.open('G:\ポーカー自動化bot\data\c10.png')
+c11 = Image.open('G:\ポーカー自動化bot\data\c11.png')
+c12 = Image.open('G:\ポーカー自動化bot\data\c12.png')
+c13 = Image.open('G:\ポーカー自動化bot\data\c13.png')
+d1 = Image.open('G:\ポーカー自動化bot\data\d1.png')
+d2 = Image.open('G:\ポーカー自動化bot\data\d2.png')
+d3 = Image.open('G:\ポーカー自動化bot\data\d3.png')
+d4 = Image.open('G:\ポーカー自動化bot\data\d4.png')
+d5 = Image.open('G:\ポーカー自動化bot\data\d5.png')
+d6 = Image.open('G:\ポーカー自動化bot\data\d6.png')
+d7 = Image.open('G:\ポーカー自動化bot\data\d7.png')
+d8 = Image.open('G:\ポーカー自動化bot\data\d8.png')
+d9 = Image.open('G:\ポーカー自動化bot\data\d9.png')
+d10 = Image.open('G:\ポーカー自動化bot\data\d10.png')
+d11 = Image.open('G:\ポーカー自動化bot\data\d11.png')
+d12 = Image.open('G:\ポーカー自動化bot\data\d12.png')
+d13 = Image.open('G:\ポーカー自動化bot\data\d13.png')
+h1 = Image.open('G:\ポーカー自動化bot\data\h1.png')
+h2 = Image.open('G:\ポーカー自動化bot\data\h2.png')
+h3 = Image.open('G:\ポーカー自動化bot\data\h3.png')
+h4 = Image.open('G:\ポーカー自動化bot\data\h4.png')
+h5 = Image.open('G:\ポーカー自動化bot\data\h5.png')
+h6 = Image.open('G:\ポーカー自動化bot\data\h6.png')
+h7 = Image.open('G:\ポーカー自動化bot\data\h7.png')
+h8 = Image.open('G:\ポーカー自動化bot\data\h8.png')
+h9 = Image.open('G:\ポーカー自動化bot\data\h9.png')
+h10 = Image.open('G:\ポーカー自動化bot\data\h10.png')
+h11 = Image.open('G:\ポーカー自動化bot\data\h11.png')
+h12 = Image.open('G:\ポーカー自動化bot\data\h12.png')
+h13 = Image.open('G:\ポーカー自動化bot\data\h13.png')
+s1 = Image.open('G:\ポーカー自動化bot\data\s1.png')
+s2 = Image.open('G:\ポーカー自動化bot\data\s2.png')
+s3 = Image.open('G:\ポーカー自動化bot\data\s3.png')
+s4 = Image.open('G:\ポーカー自動化bot\data\s4.png')
+s5 = Image.open('G:\ポーカー自動化bot\data\s5.png')
+s6 = Image.open('G:\ポーカー自動化bot\data\s6.png')
+s7 = Image.open('G:\ポーカー自動化bot\data\s7.png')
+s8 = Image.open('G:\ポーカー自動化bot\data\s8.png')
+s9 = Image.open('G:\ポーカー自動化bot\data\s9.png')
+s10 = Image.open('G:\ポーカー自動化bot\data\s10.png')
+s11 = Image.open('G:\ポーカー自動化bot\data\s11.png')
+s12 = Image.open('G:\ポーカー自動化bot\data\s12.png')
+s13 = Image.open('G:\ポーカー自動化bot\data\s13.png')
+
+
+"""
+n = 1
+for name in club:
+    adress = R"G:\ポーカー自動化bot\data" + chr(165) + name + ".png"
+    try:
+        x, y = pgui.locateCenterOnScreen(adress, region=(25, 380, 445, 170))
+        card.append([x, y, 1, n])
+        print("club")
+    except:
+        pass
+    n += 1
+    if len(card) == 5:
+        break
+n = 1
+for name in diamond:
+    adress = R"G:\ポーカー自動化bot\data" + chr(165) + name + ".png"
+    try:
+        x, y = pgui.locateCenterOnScreen(adress, region=(25, 380, 445, 170))
+        card.append([x, y, 2, n])
+        print("diamond")
+    except:
+        pass
+    n += 1
+    if len(card) == 5:
+        break
+n = 1
+for name in heart:
+    adress = R"G:\ポーカー自動化bot\data" + chr(165) + name + ".png"
+    try:
+        x, y = pgui.locateCenterOnScreen(adress, region=(25, 380, 445, 170))
+        card.append([x, y, 3, n])
+        print("heart")
+    except:
+        pass
+    n += 1
+    if len(card) == 5:
+        break
+n = 1
+for name in spade:
+    adress = R"G:\ポーカー自動化bot\data" + chr(165) + name + ".png"
+    try:
+        x, y = pgui.locateCenterOnScreen(adress, region=(25, 380, 445, 170))
+        card.append([x, y, 4, n])
+        print("spade")
+    except:
+        pass
+    n += 1
+    if len(card) == 5:
+        break
+"""
